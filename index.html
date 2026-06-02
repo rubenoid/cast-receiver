@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radio Ruben</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <!-- CAF SDK: protocol-relative, must load from gstatic (do not self-host) -->
+  <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+</head>
+<body>
+  <!-- Playback engine. Hidden behind our overlay; audio plays regardless. -->
+  <cast-media-player id="player"></cast-media-player>
+
+  <div id="bg"></div>
+  <div id="scrim"></div>
+
+  <main id="card">
+    <img id="cover" alt="" />
+    <div id="text">
+      <div id="title">Radio Ruben</div>
+      <div id="artist"></div>
+    </div>
+    <div id="chip"></div>
+  </main>
+
+  <div id="wordmark">RADIO RUBEN</div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
