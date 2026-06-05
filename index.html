@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="./styles.css" />
   <!-- CAF SDK: protocol-relative, must load from gstatic (do not self-host) -->
   <script src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+  <!-- RR_CAST_DEBUG: CAF debug logger (enables the on-screen log overlay). Remove with diagnostics. -->
+  <script src="//www.gstatic.com/cast/sdk/libs/devtools/debug_layer/caf_receiver_logger.js"></script>
 </head>
 <body>
   <!-- Playback engine. Hidden behind our overlay; audio plays regardless. -->
